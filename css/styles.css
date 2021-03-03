@@ -923,6 +923,7 @@ img {
 /* sign backdrop */
 .backdrop-sign {
   position: fixed;
+
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -969,7 +970,8 @@ img {
   top: 8px;
   right: 8px;
   background-color: var(--transparent-color);
-  color: var(--black-color);
+
+  /* color: var(--black-color); */
   border: 1px solid currentColor;
   width: 30px;
   height: 30px;
