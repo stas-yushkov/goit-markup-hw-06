@@ -243,7 +243,7 @@ img {
   font-weight: 700;
   color: currentColor;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   border: none;
@@ -998,4 +998,44 @@ img {
 .close-button:focus {
   outline: none;
   color: var(--accent-color);
+}
+
+/* footer e-mail-input-form */
+.e-mail-input-form {
+  margin-left: auto;
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.1428;
+  font-style: normal;
+}
+
+.e-mail-input-form p {
+  margin-bottom: 20px;
+}
+
+.e-mail-input-form .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 28px;
+  font-weight: 700;
+  color: currentColor;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  border: none;
+  text-align: center;
+}
+
+.e-mail-input-form .button:hover,
+.e-mail-input-form .button:focus {
+  background-color: var(--hover-background-color);
+}
+
+.e-mail-form-icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
