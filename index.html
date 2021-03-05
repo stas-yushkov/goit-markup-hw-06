@@ -668,25 +668,25 @@
           </ul>
         </div>
 
-        <form class="e-mail-form uppercase" autocomplete="on" novalidate>
+        <form class="email-form uppercase" autocomplete="on" novalidate>
           <div
-            class="e-mail-form-wrapper"
+            class="email-form-wrapper"
             role="group"
-            aria-labelledby="e-mail-input"
+            aria-labelledby="email-input"
           >
-            <p id="e-mail-input">Подпишитесь на рассылку</p>
+            <p id="email-input">Подпишитесь на рассылку</p>
             <label>
               <input
                 type="email"
-                name="e-mail"
-                id="e-mail"
+                name="email"
+                id="email"
                 class="input"
                 placeholder="E-mail"
               />
             </label>
             <button type="button" class="button">
               Подписаться
-              <svg class="e-mail-form-icon" height="24" width="24">
+              <svg class="email-form-icon" height="24" width="24">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
@@ -702,12 +702,40 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        Оставьте свои данные, мы вам перезвоним
-        <input type="text" />
-        <input type="tel" />
-        <input type="email" />
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="checkbox" />
+        <form class="modal-form" autocomplete="on" novalidate>
+          <div
+            class="modal-form-wrapper"
+            role="group"
+            aria-labelledby="sign-head"
+          >
+            <p id="sign-head">Оставьте свои данные, мы вам перезвоним</p>
+            <label>
+              <input type="text" />
+              <svg height="18" width="18">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </label>
+            <label>
+              <input type="tel" />
+              <svg height="18" width="18">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </label>
+            <label>
+              <input type="email" />
+              <svg height="18" width="18">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </label>
+            <label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+        </form>
+
+        <label>
+          <input type="checkbox" />
+        </label>
         <button type="button"></button>
       </div>
     </div>
