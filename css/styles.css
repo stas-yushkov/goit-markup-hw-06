@@ -980,6 +980,10 @@ img {
   top: 8px;
   right: 8px;
   background-color: var(--transparent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 
   /* color: var(--black-color); */
   border: 1px solid currentColor;
@@ -1041,7 +1045,6 @@ img {
 }
 
 .e-mail-form .input {
-  border: none;
   outline: none;
   color: currentColor;
   background-color: transparent;
