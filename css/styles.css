@@ -965,8 +965,11 @@ img {
   transform-origin: top left;
   transform: scale(1) translateX(-50%) translateY(-50%);
 
-  width: 528px;
-  height: 581px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+
   background-color: var(--white-color);
   box-shadow: var(--box-shadow);
   border-radius: 4px;
