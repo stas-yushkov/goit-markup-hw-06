@@ -710,30 +710,41 @@
           >
             <p id="sign-head">Оставьте свои данные, мы вам перезвоним</p>
             <label>
-              <input type="text" />
+              <p>Имя</p>
+              <input type="text" name="name" />
               <svg height="18" width="18">
                 <use href="./images/icons.svg#close"></use>
               </svg>
             </label>
             <label>
-              <input type="tel" />
+              <p>Телефон</p>
+              <input type="tel" name="tel" />
               <svg height="18" width="18">
                 <use href="./images/icons.svg#close"></use>
               </svg>
             </label>
             <label>
-              <input type="email" />
+              <p>Почта</p>
+              <input type="email" name="email" />
               <svg height="18" width="18">
                 <use href="./images/icons.svg#close"></use>
               </svg>
             </label>
             <label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <p>Комментарий</p>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
             </label>
           </div>
         </form>
 
         <label>
+          Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
           <input type="checkbox" />
         </label>
         <button type="button"></button>
