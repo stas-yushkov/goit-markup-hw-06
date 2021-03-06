@@ -993,21 +993,25 @@ img {
   padding: 0;
 
   /* color: var(--black-color); */
-  border: 1px solid currentColor;
+  border: 1px solid var(--close-border-color);
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  color: var(--close-border-color);
+  color: var(--black-color);
   cursor: pointer;
+  outline: none;
 
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
 
+.close-button > svg {
+  fill: currentColor;
+}
+
 .close-button:hover,
 .close-button:focus {
-  outline: none;
   color: var(--accent-color);
 }
 
