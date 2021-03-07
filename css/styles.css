@@ -1044,9 +1044,19 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.1721;
-  /* identical to box height, or 171% */
+  color: var(--black-color);
 
   letter-spacing: 0.01em;
+}
+
+.modal-form .input:hover + .icon,
+.modal-form .input:focus + .icon {
+  fill: var(--accent-color);
+}
+
+.modal-form .input:hover,
+.modal-form .input:focus {
+  border-color: var(--accent-color);
 }
 
 .modal-form .label,
@@ -1086,6 +1096,7 @@ img {
   top: 50%;
   left: 11px;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .modal-form .textarea {
@@ -1103,6 +1114,7 @@ img {
   display: inline-block;
   padding-left: calc(16px + 7px);
   position: relative;
+  cursor: pointer;
 }
 
 .modal-form .checkbox-icon {
@@ -1122,14 +1134,41 @@ img {
   border: none;
 }
 
+/* 
+.modal-form .checkbox:hover + .checkbox-icon,
+.modal-form .checkbox:focus + .checkbox-icon {
+  outline: 2px auto var(--accent-color);
+} */
+
+.modal-form .checkbox-label-text {
+  /* cursor: pointer; */
+}
+
+.modal-form .checkbox:hover ~ .checkbox-label-text,
+.modal-form .checkbox:focus ~ .checkbox-label-text {
+  color: var(--accent-color);
+}
+
 .modal-form .link {
   color: var(--accent-color);
   text-decoration: underline;
 }
 
+.modal-form .link:hover,
+.modal-form .link:focus {
+  color: var(--hover-background-color);
+  outline: none;
+}
+
 .modal-sign .button {
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--hover-background-color);
+  box-shadow: var(--button-shadow);
 }
 
 /* .checkbox {
