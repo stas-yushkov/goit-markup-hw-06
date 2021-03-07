@@ -710,49 +710,64 @@
               Оставьте свои данные, мы вам перезвоним
             </p>
 
-            <div class="form-field">
+            <div class="group">
               <label class="label" for="name">Имя</label>
-              <svg class="input-icon" height="18" width="18">
-                <use href="./images/icons.svg#person"></use>
-              </svg>
-              <input class="input" type="text" name="name" />
+              <div class="form-field">
+                <input class="input" type="text" name="name" />
+                <svg class="icon" height="18" width="18">
+                  <use href="./images/icons.svg#person"></use>
+                </svg>
+              </div>
             </div>
 
-            <div class="form-field">
-              <label for="tel" class="input-label">Телефон</label>
-              <svg class="input-icon" height="18" width="18">
-                <use href="./images/icons.svg#phone"></use>
-              </svg>
-              <input class="input" type="tel" name="tel" />
+            <div class="group">
+              <label for="tel" class="label">Телефон</label>
+              <div class="form-field">
+                <input class="input" type="tel" name="tel" />
+                <svg class="icon" height="18" width="18">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+              </div>
             </div>
 
-            <div class="form-field">
-              <label for="email" class="input-label">Почта</label>
-              <svg class="input-icon" height="18" width="18">
-                <use href="./images/icons.svg#email"></use>
-              </svg>
-              <input class="input" type="email" name="email" />
+            <div class="group">
+              <label for="email" class="label">Почта</label>
+              <div class="form-field">
+                <input class="input" type="email" name="email" />
+                <svg class="icon" height="18" width="18">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </div>
             </div>
 
-            <div class="form-field">
-              <label for="comment" class="input-label">Комментарий</label>
-              <textarea
-                class="input textarea"
-                name="comment"
-                id="comment"
-                placeholder="Введите текст"
-                rows="5"
-              ></textarea>
+            <div class="group">
+              <label for="comment" class="label">Комментарий</label>
+              <div class="form-field">
+                <textarea
+                  class="input textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Введите текст"
+                  rows="6"
+                ></textarea>
+              </div>
             </div>
           </div>
 
-          <div class="form-field">
-            <label for="checkbox">Соглашаюсь с рассылкой и принимаю</label>
+          <div class="group">
+            <!-- <div class="form-field"></div> -->
+            <label class="checkbox-label">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="checkbox"
+              />
+              <svg class="checkbox-icon" height="15" width="16">
+                <use href="./images/icons.svg#check-mark"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+            </label>
             <a class="link" href="#">Условия договора</a>
-            <svg class="input-icon" height="15" width="16">
-              <use href="./images/icons.svg#check-mark"></use>
-            </svg>
-            <input class="checkbox" type="checkbox" name="checkbox" />
           </div>
         </form>
         <button class="button" type="button">Отправить</button>
